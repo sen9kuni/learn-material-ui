@@ -4,6 +4,7 @@ import Albums from "./pages/Albums";
 import Signature from "./pages/Signature";
 import Dashboard from "./pages/Dashboard";
 import LabDummy from "./pages/labdummy";
+import CoinsMarket from "./pages/coins";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/ttd" element={<Signature />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/lab" element={<LabDummy />} />
+      <Route path="/coins" element={<CoinsMarket />} />
     </Routes>
   );
 }
