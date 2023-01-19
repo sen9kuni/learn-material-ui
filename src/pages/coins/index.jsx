@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TableCoins from "./TableCoins";
+// import axios from "axios";
 
 const mdTheme = createTheme();
 const timePeriodList = ["3h", "24h", "7d", "30d", "3m", "1y", "3y", "5y"];
@@ -49,8 +50,8 @@ export default function CoinsMarket() {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "99d0bade22mshfa07800dd3e1f5ep190e9djsn9bf681bfa5ad",
-        "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
+        "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
+        "X-RapidAPI-Host": process.env.REACT_APP_API_HOST,
       },
     };
 
